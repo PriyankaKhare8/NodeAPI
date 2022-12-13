@@ -30,7 +30,7 @@ module.exports = {
         let employeeModule = require('../Module/employeeModule');
 
         employeeModule.addEmployee(name, profession, location, contact, emailId, id).then((result) => {
-            res.send("Data Added Successfully");
+             res.send(result);
 
 
         }).catch((err) => {
